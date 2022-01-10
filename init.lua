@@ -10,6 +10,7 @@ end
 
 local success, LinoriaLibrary = pcall(game.HttpGet, game, "https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/UI%20Library%202.0.lua")
 if (success) then
+    LinoriaLibrary = loadstring(LinoriaLibrary)()
     getgenv().LinoriaLibrary = LinoriaLibrary
     local AntiShield = load("Modules/AntiShield")
 
